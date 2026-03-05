@@ -1,0 +1,96 @@
+/* Global Styles */
+:root {
+    --color-ink: #2C2C2C;
+    --color-paper: #FDFBF7;
+    --color-gold: #D4AF37;
+    --color-sand: #DED6CA;
+    --color-amethyst: #7B2CBF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-ink);
+    background-color: var(--color-paper);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Custom Utilities */
+.grayscale {
+    filter: grayscale(100%);
+    transition: filter 1s ease-out;
+}
+
+.grayscale-0 {
+    filter: grayscale(0%);
+}
+
+/* Animation Utilities */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scroll Reveal Image Effect */
+.scroll-reveal {
+    opacity: 0;
+    transform: scale(1.05);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out, filter 1s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: scale(1);
+    filter: grayscale(0%); /* Reveal color on scroll */
+}
+
+/* Navigation Transition */
+.nav-scrolled {
+    background-color: rgba(253, 251, 247, 0.95); /* Paper color with opacity */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Button Hover Effects */
+.btn-hover-slide {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-hover-slide::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--color-gold);
+    transition: all 0.3s ease-out;
+    z-index: -1;
+}
+
+.btn-hover-slide:hover::after {
+    height: 100%;
+}
+
+/* Text Selection */
+::selection {
+    background: var(--color-gold);
+    color: var(--color-ink);
+}

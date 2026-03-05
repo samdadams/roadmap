@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap2Wellness | Christina Haverkort</title>
+    <meta name="description" content="Distant Energy Healing, Manual Therapy, and Spiritual Development with Christina Haverkort.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (via CDN for static portability) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ink': '#2C2C2C',
+                        'paper': '#FDFBF7',
+                        'gold': '#D4AF37',
+                        'sand': '#DED6CA',
+                        'amethyst': '#7B2CBF'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                    animation: {
+                        'soft-in': 'fadeIn 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-paper text-ink font-sans antialiased selection:bg-gold selection:text-ink">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300" id="main-nav">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-4 z-50 relative">
+                <img src="https://roadmap2wellness.ca/images/roadmap2wellness-logo.png" alt="Roadmap2Wellness" class="h-8 w-auto invert brightness-0">
+                <span class="text-xs uppercase tracking-[0.3em] font-bold">Roadmap2Wellness</span>
+            </a>
+            
+            <div class="hidden md:flex gap-8 text-[10px] uppercase tracking-[0.2em] font-medium">
+                <a href="#about" class="hover:text-gold transition-colors">About</a>
+                <a href="#clinic" class="hover:text-gold transition-colors">The Clinic</a>
+                <a href="#academy" class="hover:text-gold transition-colors">The Academy</a>
+                <a href="#events" class="hover:text-gold transition-colors">Events</a>
+                <a href="#journal" class="hover:text-gold transition-colors">Journal</a>
+            </div>
+
+            <a href="#check-in" class="hidden md:block px-6 py-2 border border-ink/20 rounded-full text-[10px] uppercase tracking-[0.2em] hover:bg-ink hover:text-paper transition-all">
+                Check In
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden z-50 space-y-1.5" id="menu-btn">
+                <span class="block w-6 h-px bg-ink"></span>
+                <span class="block w-6 h-px bg-ink"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&q=80&w=1600" 
+                alt="Architecture of Safety - Lighthouse" 
+                class="w-full h-full object-cover grayscale scroll-reveal transition-all duration-1000 scale-105"
+            >
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white px-6 max-w-4xl">
+            <span class="block text-xs uppercase tracking-[0.4em] mb-6 animate-soft-in" style="animation-delay: 0.2s">Sovereignty • Regulation • Wholeness</span>
+            <h1 class="font-serif text-5xl md:text-8xl mb-8 leading-[0.9] animate-soft-in" style="animation-delay: 0.4s">
+                The Architecture<br/><span class="italic font-light">of Safety</span>
+            </h1>
+            <p class="text-sm md:text-base font-light tracking-wide opacity-80 max-w-xl mx-auto mb-12 leading-loose animate-soft-in" style="animation-delay: 0.6s">
+                Bridging the gap between clinical anatomy and the subtle body. A pathway to reclaiming your nervous system.
+            </p>
+            <div class="animate-soft-in" style="animation-delay: 0.8s">
+                <a href="#clinic" class="inline-block px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-ink transition-all">
+                    Begin The Journey
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 bg-sand relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-5 relative">
+                <div class="aspect-[3/4] bg-ink relative rounded-sm overflow-hidden shadow-2xl">
+                    <img 
+                        src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=800" 
+                        alt="Christina Haverkort" 
+                        class="w-full h-full object-cover grayscale scroll-reveal transition-all duration-1000"
+                    >
+                    <div class="absolute inset-0 border border-gold/20 m-4"></div>
+                </div>
+            </div>
+            <div class="md:col-span-7">
+                <span class="text-amethyst text-xs uppercase tracking-[0.4em] font-bold mb-6 block">The Architect</span>
+                <h2 class="font-serif text-5xl md:text-7xl mb-8 text-ink">Christina Haverkort</h2>
+                <div class="space-y-6 text-lg font-light leading-relaxed text-ink opacity-80">
+                    <p>
+                        More than thirty years ago, I began a devoted inward journey—exploring the inner landscape of energy, awareness, and expanded consciousness. Through meditation and deep self-inquiry, I came to understand that we are more than the physical body.
+                    </p>
+                    <p>
+                        As a Registered Manual Therapist and Energy Healer, I integrate hands-on osteopathic and nervous system-based approaches with over thirty years of lived experience and clinical practice.
+                    </p>
+                </div>
+                <div class="mt-12">
+                    <a href="#clinic" class="inline-block px-8 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-amethyst transition-all">
+                        Work With Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales Flyer 1: The Clinic (Private Sessions) -->
+    <section id="clinic" class="py-32 px-6 bg-paper relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="order-2 md:order-1">
+                <div class="relative aspect-[3/4] overflow-hidden rounded-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1544367563-12123d8965cd?auto=format&fit=crop&q=80&w=1200" 
+                        alt="Manual Therapy" 
+                        class="w-full h-full object-cover grayscale scroll-reveal transition-all duration-1000"
+                    >
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <span class="text-gold text-xs uppercase tracking-[0.4em] font-bold mb-4 block">Private Practice</span>
+                <h2 class="font-serif text-5xl md:text-6xl text-ink mb-8">The Clinic</h2>
+                <p class="text-lg font-light leading-relaxed opacity-70 mb-8">
+                    This is not just "treatment." It is a collaborative excavation. We work with the fascial lines, the energetic meridians, and the nervous system to locate where your story has become stuck in your biology.
+                </p>
+                <ul class="space-y-4 mb-12 text-sm uppercase tracking-widest opacity-60">
+                    <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Manual Osteopathic Therapy</li>
+                    <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Distant Energy Healing</li>
+                    <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Somatic Regulation</li>
+                </ul>
+                <a href="https://booking.roadmap2wellness.ca" class="px-8 py-4 bg-ink text-paper text-xs uppercase tracking-[0.3em] hover:bg-gold transition-colors">
+                    Book A Session
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sales Flyer 2: The Academy (Training) -->
+    <section id="academy" class="py-32 px-6 bg-ink text-paper relative">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="text-amethyst text-xs uppercase tracking-[0.4em] font-bold mb-6 block">Education & Mentorship</span>
+            <h2 class="font-serif text-5xl md:text-7xl mb-8">The Academy</h2>
+            <p class="text-xl font-light leading-relaxed opacity-70 mb-12 max-w-2xl mx-auto">
+                For practitioners, healers, and seekers. Learn the language of the subtle body. Develop energetic literacy. Master the art of holding space without losing yourself.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16 text-left">
+                <div class="p-8 border border-white/10 hover:border-amethyst transition-colors group">
+                    <h3 class="font-serif text-2xl mb-4 group-hover:text-amethyst transition-colors">Level I: Foundations</h3>
+                    <p class="text-xs leading-loose opacity-60">Grounding, protection, and the anatomy of the energy field.</p>
+                </div>
+                <div class="p-8 border border-white/10 hover:border-amethyst transition-colors group">
+                    <h3 class="font-serif text-2xl mb-4 group-hover:text-amethyst transition-colors">Level II: Advanced</h3>
+                    <p class="text-xs leading-loose opacity-60">Reading the field, cord cutting, and ancestral clearing.</p>
+                </div>
+                <div class="p-8 border border-white/10 hover:border-amethyst transition-colors group">
+                    <h3 class="font-serif text-2xl mb-4 group-hover:text-amethyst transition-colors">Mentorship</h3>
+                    <p class="text-xs leading-loose opacity-60">1-on-1 guidance for building your sovereign practice.</p>
+                </div>
+            </div>
+
+            <a href="#waitlist" class="px-10 py-5 border border-white/20 text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-ink transition-all">
+                Join The Waitlist
+            </a>
+        </div>
+    </section>
+
+    <!-- Event Flyer 1: Energetic Recalibration -->
+    <section id="event-1" class="py-32 px-6 bg-[#E8E6E1]">
+        <div class="max-w-6xl mx-auto bg-white shadow-2xl overflow-hidden flex flex-col md:flex-row">
+            <div class="md:w-1/2 relative min-h-[400px]">
+                <img 
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=800" 
+                    alt="Energetic Recalibration" 
+                    class="absolute inset-0 w-full h-full object-cover grayscale scroll-reveal transition-all duration-1000"
+                >
+                <div class="absolute top-8 left-8 bg-gold text-ink px-4 py-2 text-[10px] uppercase tracking-widest font-bold">
+                    Nov 15-16, 2024 • Toronto
+                </div>
+            </div>
+            <div class="md:w-1/2 p-12 md:p-16 flex flex-col justify-center">
+                <h3 class="font-serif text-4xl mb-6 text-ink">Energetic Recalibration</h3>
+                <p class="text-sm leading-loose opacity-70 mb-8">
+                    A two-day immersion into the mechanics of your own field. Stop leaking energy. Repair the tears in your auric boundary. Learn to run high-frequency current without burning out your nervous system.
+                </p>
+                <div class="space-y-4 mb-10">
+                    <div class="flex justify-between text-xs uppercase tracking-widest border-b border-ink/10 pb-2">
+                        <span>Early Bird</span>
+                        <span>$450</span>
+                    </div>
+                    <div class="flex justify-between text-xs uppercase tracking-widest border-b border-ink/10 pb-2">
+                        <span>Regular</span>
+                        <span>$550</span>
+                    </div>
+                </div>
+                <button class="w-full py-4 bg-ink text-white text-xs uppercase tracking-[0.3em] hover:bg-gold hover:text-ink transition-colors">
+                    Secure Your Spot
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="journal" class="py-32 px-6 bg-paper">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 text-center">
+                <span class="text-xs uppercase tracking-[0.4em] text-gold font-bold mb-4 block">The Journal</span>
+                <h2 class="font-serif text-5xl text-ink">Insights & Transmissions</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Post 1 -->
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-sm mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&q=80&w=800" alt="Architecture of Safety" class="w-full h-full object-cover grayscale scroll-reveal transition-all duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="flex items-center gap-3 mb-3 text-[10px] uppercase tracking-widest opacity-50">
+                        <span>Oct 12, 2024</span>
+                        <span class="w-px h-3 bg-ink"></span>
+                        <span>Nervous System</span>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-gold transition-colors">The Architecture of Safety</h3>
+                    <p class="text-sm opacity-70 leading-relaxed mb-4">Safety is not a thought; it is a physiological state. Learn how to build the scaffolding.</p>
+                    <a href="blog-1.html" class="text-[10px] uppercase tracking-[0.2em] font-bold border-b border-ink pb-1 group-hover:text-gold group-hover:border-gold transition-colors">Read Article</a>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-sm mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1581093588402-fdd11a091778?auto=format&fit=crop&q=80&w=800" alt="Beyond Structural" class="w-full h-full object-cover grayscale scroll-reveal transition-all duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="flex items-center gap-3 mb-3 text-[10px] uppercase tracking-widest opacity-50">
+                        <span>Sep 28, 2024</span>
+                        <span class="w-px h-3 bg-ink"></span>
+                        <span>Fascia</span>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-gold transition-colors">Beyond the Structural</h3>
+                    <p class="text-sm opacity-70 leading-relaxed mb-4">Why treating the pain where it lives often fails. The fascial roots of dysfunction.</p>
+                    <a href="blog-2.html" class="text-[10px] uppercase tracking-[0.2em] font-bold border-b border-ink pb-1 group-hover:text-gold group-hover:border-gold transition-colors">Read Article</a>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-sm mb-6 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1534531173927-aeb928d54385?auto=format&fit=crop&q=80&w=800" alt="Ancestral Echoes" class="w-full h-full object-cover grayscale scroll-reveal transition-all duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="flex items-center gap-3 mb-3 text-[10px] uppercase tracking-widest opacity-50">
+                        <span>Sep 15, 2024</span>
+                        <span class="w-px h-3 bg-ink"></span>
+                        <span>Epigenetics</span>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-3 group-hover:text-gold transition-colors">Echoes of the Ancestors</h3>
+                    <p class="text-sm opacity-70 leading-relaxed mb-4">We carry more than our own history. Clearing the generational line.</p>
+                    <a href="blog-3.html" class="text-[10px] uppercase tracking-[0.2em] font-bold border-b border-ink pb-1 group-hover:text-gold group-hover:border-gold transition-colors">Read Article</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Flyer 2: Field Coherence -->
+    <section id="event-2" class="py-32 px-6 bg-ink text-paper">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-amethyst text-xs uppercase tracking-[0.4em] font-bold mb-6 block">Advanced Workshop</span>
+                <h2 class="font-serif text-5xl mb-8">Field Coherence & Integration</h2>
+                <p class="text-lg font-light leading-relaxed opacity-80 mb-12">
+                    For graduates of Level I. We move beyond personal healing into collective service. Learn to hold the "zero point" field. Master the mechanics of remote viewing and distant healing.
+                </p>
+                <div class="grid grid-cols-2 gap-8 mb-12">
+                    <div>
+                        <span class="block text-xs uppercase tracking-widest opacity-50 mb-2">Date</span>
+                        <span class="font-serif text-xl">Jan 10-12, 2025</span>
+                    </div>
+                    <div>
+                        <span class="block text-xs uppercase tracking-widest opacity-50 mb-2">Location</span>
+                        <span class="font-serif text-xl">Virtual Immersion</span>
+                    </div>
+                </div>
+                <button class="px-10 py-4 border border-paper text-xs uppercase tracking-[0.3em] hover:bg-paper hover:text-ink transition-all">
+                    Apply Now
+                </button>
+            </div>
+            <div class="relative h-[600px] rounded-t-full overflow-hidden border border-white/10">
+                <img 
+                    src="https://images.unsplash.com/photo-1534531173927-aeb928d54385?auto=format&fit=crop&q=80&w=800" 
+                    alt="Coherence" 
+                    class="w-full h-full object-cover grayscale scroll-reveal transition-all duration-1000"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a1a1a] text-sand py-24 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-light tracking-[0.4em] uppercase text-paper mb-8">Roadmap2Wellness</h2>
+            <p class="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-16 leading-loose">
+                Christina Haverkort • Registered Manual Therapist • Energy Healer<br/>
+                Bridging Science & Spirit
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-12 text-[10px] uppercase tracking-[0.2em] font-medium opacity-60 mb-16">
+                <a href="#home" class="hover:text-gold transition-colors">Home</a>
+                <a href="#about" class="hover:text-gold transition-colors">Bio</a>
+                <a href="#clinic" class="hover:text-gold transition-colors">Clinic</a>
+                <a href="#academy" class="hover:text-gold transition-colors">Academy</a>
+                <a href="#journal" class="hover:text-gold transition-colors">Journal</a>
+            </div>
+
+            <p class="text-[9px] uppercase tracking-widest opacity-20 max-w-2xl mx-auto leading-relaxed">
+                Disclaimer: Services are complementary and educational. Not intended to diagnose or treat medical conditions.
+            </p>
+            <p class="text-[9px] uppercase tracking-widest opacity-20 mt-8">
+                © 2024-2026 Roadmap2Wellness. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
